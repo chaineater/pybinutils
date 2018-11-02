@@ -171,8 +171,3 @@ class BinaryStream:
         if min_capacity < 0:
             MemoryError
         return sys.maxsize if min_capacity > BinaryStream.MAX_ARRAY_SIZE else BinaryStream.MAX_ARRAY_SIZE
-
-
-
-test = BinaryStream(b'\x01\x02\x03\x04\x05',4)
-print(test.get_byte())
